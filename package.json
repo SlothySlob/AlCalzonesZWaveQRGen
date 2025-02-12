@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "AlCalzone",
   "license": "MIT",
   "devDependencies": {
     "@zwave-js/core": "^14.1.0",
