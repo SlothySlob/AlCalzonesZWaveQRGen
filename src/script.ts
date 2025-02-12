@@ -96,7 +96,7 @@ export async function generateQRCode(
     false,
     [
       uint16((info.genericDeviceClass << 8) | info.specificDeviceClass),
-      uint16(info.specificDeviceClass),
+      uint16(info.installerIconType), // offending line
     ].join("")
   );
   partsAfterChecksum.push(productType);
