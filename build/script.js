@@ -1031,7 +1031,7 @@ async function generateQRCode(info, size = 256) {
     const supportedProtocols = encodeTLV(
       ProvisioningInformationType.SupportedProtocols,
       false,
-      level(encodeBitMask(info.supportedProtocols, void 0, Protocols.ZWave))
+      uint8(encodeBitMask(info.supportedProtocols, void 0, Protocols.ZWave))
     );
     partsAfterChecksum.push(supportedProtocols);
   }
